@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+.wrapper {
+  /* box-sizing: border-box;
+  height: 10rem;
+  max-height: 10rem; */
+  width: 100%;
+  max-height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image,
+.form {
+  display: inline-block;
+  vertical-align: top;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image {
+  /* height: 100%; */
+  float: left;
+  margin-right: 20rem;
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.form {
+  margin: 7rem auto 0 auto;
+  padding: 2rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+.card-front {
+  position: absolute;
+  bottom: 30rem;
+  left: 10%;
+}
+.card-back {
+  position: absolute;
+  bottom: 12rem;
+  left: 15%;
+}
+.bank {
+  position: absolute;
+  bottom: 80%;
+  left: 13%;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+}
+.mobile {
+  display: none;
+}
+.card-number {
+  position: absolute;
+  bottom: 67%;
+  left: 12%;
+  font: inherit;
   color: white;
+  font-size: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.card-name {
+  position: absolute;
+  bottom: 62%;
+  left: 12%;
+  font: inherit;
+  color: white;
+  font-size: 1.05rem;
+  text-transform: uppercase;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-exp {
+  position: absolute;
+  bottom: 62%;
+  left: 33rem;
+  font: inherit;
+  color: white;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+.card-cvc {
+  position: absolute;
+  bottom: 19rem;
+  left: 38rem;
+  font: inherit;
+  color: rgb(217, 217, 222);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+@media (max-width: 450px) {
+  .wrapper {
+    margin: 0 auto;
+    /* width: auto; */
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .image {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .form {
+    margin: 35rem auto 0 auto;
+    display: inline-block;
+    position: relative;
+  }
+  .card-front {
+    /* display: none; */
+    position: absolute;
+    bottom: 29%;
+    z-index: 2;
+  }
+  .card-back {
+    /* display: none; */
+    z-index: 1;
+    bottom: 50%;
+    left: 30%;
+  }
+  .card-name {
+    z-index: 4;
+    bottom: 33%;
+    left: 17%;
+  }
+  .card-number {
+    z-index: 5;
+    width: 200%;
+    bottom: 40%;
+    left: 17%;
+  }
+  .card-exp {
+    z-index: 6;
+    bottom: 33%;
+    left: 110%;
+  }
+  .card-cvc {
+    z-index: 7;
+    bottom: 66%;
+    left: 125%;
+  }
+  .bank {
+    z-index: 8;
+    bottom: 55%;
+    left: 17%;
   }
 }

@@ -1,0 +1,67 @@
+/* .formInput {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  margin: 5rem auto;
+  height: 100%;
+  font-size: 1rem;
+} */
+.form-control label {
+  display: block;
+}
+.form-control input {
+  width: 30rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid rgb(34, 10, 46);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  font: inherit;
+}
+
+.Exp-Date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.Exp-Date input {
+  width: 3rem;
+  margin: 0.5rem 0;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid rgb(34, 10, 46);
+}
+.CVC {
+  margin-left: 2rem;
+  bottom: 1rem;
+}
+.CVC label {
+  display: block;
+}
+.CVC input {
+  width: 16.5rem;
+  border: 1px solid rgb(34, 10, 46);
+}
+::placeholder {
+  font: inherit;
+  font-size: 1rem;
+}
+button {
+  display: block;
+  font: inherit;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(34, 10, 46);
+  border: 1px solid rgb(34, 10, 46);
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .CVC input {
+    width: 16rem;
+  }
+}
